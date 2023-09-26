@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #0f172a;
+}
+
+
+.intro{
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    color: #fff;
+    line-height: 2.5em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.intro h1{
+    font-size: 3rem;
+}
+.intro h4{
+    font-size: 1rem;
+    margin-top: 5px;
+}
+.intro p{
+    font-size: 16px;
+    line-height: 24px;
+    width: 15vw;
+    font-weight: 400;
+    color: RGB(148, 163, 184);
+    margin-top: 16px;
+}
+
+.nav{
+    
+    margin-top: 50%;
+    
+    font-size: 12px;
+    line-height: 2rem;
+}
+.nav a {
+    color: RGB(148, 163, 184);
+    text-decoration: none;
+}
+.nav ul {
+    list-style: none;
+}
+
+.nav a:hover{
+    color: #fff;
+}
+
+
+.social{
+    margin-top: 20vh;
+    display: flex;
+    color: RGB(148, 163, 184);
+    gap: 2vw;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.social a{
+    color: RGB(148, 163, 184);
+    text-decoration: none;
+}
+
+.social i:hover{
+    color: #fff;
+}
+
+.details{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 50%;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+
+.about{
+    margin-right: 30%;
+    color: RGB(148, 163, 184);
+}
+
+.about p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    vertical-align: baseline;
+    text-align: justify;
+}
+
+.experience{
+    margin-top: 10%;
+}
+
+.exp1{
+    display: block;
+    color: RGB(148, 163, 184);
+    padding: 20px;
+    width: 70%;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    margin: 20px;
+}
+.exp1:hover{
+    background-color: rgba(50, 227, 203, 0.048);
+    border-radius: 5px;
+}
+.time{
+    margin-top: 10px;
+    margin-right: 20px;
+    color: RGB(148, 163, 184);
+    font-size: 10px;
+    letter-spacing: .1rem;
+}
+.exp-details{
+    display: block;
+    align-items:self-start;
+    line-height: 24px;
+}
+
+.exp-details h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.exp-details h2:hover{
+    color: RGB(94, 234, 212)
+}
+
+.exp-details p{
+    margin-top: 5px;
+    width: 70%;
+    text-align: justify;
+}
+.skill-btn {
+    display: grid; /* Use grid display */
+    grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
+    grid-gap: 0; /* Remove gap between grid items */
+    width: 70%;
+    margin-top: 20px;
+    color: RGB(94, 234, 212);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.skill-btn ul {
+    text-align: center;
+    background-color: rgba(45, 212, 191, 0.1);
+    padding: 10px;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.btn{
+    background-color: rgba(45,212,191,.1);
+    padding: 20px;
+    border-radius: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn a{
+    color: RGB(148, 163, 184);
+    text-decoration: none;
+}
+
+.btn a:hover{
+    color: RGB(94, 234, 212);
+}
+.project1{
+    display: flex;
+    color: RGB(148, 163, 184);
+    padding: 20px;
+    width: 70%;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    margin: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.project1:hover{
+    background-color: rgba(50, 227, 203, 0.048);
+    border-radius: 5px;
+
+}
+.p1 img{
+    width: 100px;
+    margin: 20px;
+}
+
+.project-detail h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.project-detail h2:hover{
+    color: RGB(94, 234, 212)
+}
+.project-details p{
+    margin-top: 5px;
+    width: 70%;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+.project-detail a{
+    text-decoration: none;
+    color: RGB(148, 163, 184);
+}
+.end-notes{
+    color: RGB(148, 163, 184);
+    padding: 20px;
+    width: 60%;
+    margin: 10px;
+    margin-bottom: 20%;
+}
+
+
+.spotlight {
+    position: fixed; 
+    width: 350px;
+    height: 350px;
+    background: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9) 10%, transparent 70%), 
+    linear-gradient(45deg, rgba(148, 163, 184, 0.2) 20%, transparent 80%), 
+    linear-gradient(60deg, rgba(197, 213, 235, 0.2) 30%, transparent 90%);
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    box-shadow: 0 0 50px rgba(252, 252, 252, 0.5);
+    transition: transform 1s linear; 
+}
+
+.contact{
+    display: flex;
+    color: RGB(148, 163, 184);
+    padding: 20px;
+    width: 90%;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+.contact:hover{
+    background-color: rgba(50, 227, 203, 0.048);
+    border-radius: 5px;
+}
+.conatct-right
+{
+    flex-basis: 60%;
+}
+.conatct-right form
+{
+    width: 100%;
+}
+form input, form textarea
+{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: RGB(128, 153, 164);
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form button
+{
+    background-color: #076480;
+    cursor: pointer;
+    color: RGB(148, 163, 184);
+}
+
+@media (max-width: 1350px) {
+
+
+    .intro{
+        position: fixed;
+        top: 10%;
+        left: 10%;
+        color: #fff;
+        line-height: 2.5em;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .intro p{
+        width: 100%;
+    }
+
+    .about {
+        margin-left: 50px; 
+        text-align: center; 
+        width: 80%;
+        
+    }
+    .about p {
+        font-size: 14px; 
+        line-height: 22px; 
+    }
+    .experience {
+        margin-top: 5%; 
+    }
+
+    .exp1 {
+        width: 90%; 
+        margin: 10px auto;
+    }
+    .exp-details{
+        display: block;
+        align-items:justify;
+        line-height: 22px;
+        letter-spacing: .01rem;
+        width: 50vw;
+    }
+    .skill-btn {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 0; 
+        width: 50%;
+        margin-top: 20px;
+        color: RGB(94, 234, 212);
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
+    .skill-btn ul {
+        text-align: center;
+        background-color: rgba(45, 212, 191, 0.1);
+        padding: 10px;
+        border-radius: 100px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .btn {
+        width: 20vw; 
+        margin: 10px auto;
+    }
+    .project1{
+        width: 90%;
+    }
+    .conatct-right
+    {
+        flex-basis: 100%;
+    }
+    .end-notes{
+        color: RGB(148, 163, 184);
+        padding: 20px;
+        width: 90%;
+        margin: 10px;
+        margin-bottom: 20%;
+    }
+}
+
+@media (max-width: 850px) {
+   .intro{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+   }
+    .intro p{
+        font-size: 16px;
+        line-height: 24px;
+        width: 50vw;
+        font-weight: 400;
+        color: RGB(148, 163, 184);
+        margin-top: 16px;
+    }
+    .details{
+        z-index: 999;
+        position: absolute;
+        top: 120%;
+        left: 0%;
+        right: 20%;
+        width: 100%;
+        font-family:Arial, Helvetica, sans-serif;
+        line-height: 24px;
+    }
+    .exp-details p{
+        margin-top: 5px;
+        width: 80vw;
+        text-align: justify;
+    }
+    .skill-btn {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 0;
+        width: 70%;
+        margin-top: 20px;
+        color: RGB(94, 234, 212);
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .skill-btn ul {
+        text-align: center;
+        background-color: rgba(45, 212, 191, 0.1);
+        padding: 10px;
+        border-radius: 100px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .btn{
+        width: 50vw;
+    }
+}
